@@ -20,7 +20,7 @@ vector<Mago*> generarMagos();
 int main(int argc, char** argv) {
 	int a = 0;
 	vector<Mago*> magos = generarMagos();
-	Hogwarts* hogwarts;
+	Hogwarts* hogwarts = new Hogwarts();
 	while(a!=4) {
 		switch(a = menu()) {
 			case 1: {
