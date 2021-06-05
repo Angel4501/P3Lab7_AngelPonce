@@ -1,11 +1,16 @@
 #ifndef MAGOSLYTHERIN_H
 #define MAGOSLYTHERIN_H
-
-class MagoSlytherin
+#include "Mago.h"
+#include<string>
+using namespace std;
+class MagoSlytherin : public Mago
 {
+	private:
+		int liderazgo;
 	public:
-		MagoSlytherin();
+		MagoSlytherin(int,int,int,int,int);
 		~MagoSlytherin();
+		virtual void toString();
 	protected:
 };
 

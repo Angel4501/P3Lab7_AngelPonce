@@ -1,11 +1,14 @@
 #ifndef MAGOGRYFFINDOR_H
 #define MAGOGRYFFINDOR_H
-
-class MagoGryffindor
+#include "Mago.h"
+class MagoGryffindor : public Mago
 {
+	private:
+		int atrevimiento;
 	public:
-		MagoGryffindor();
+		MagoGryffindor(int,int,int,int,int);
 		~MagoGryffindor();
+		virtual void toString();
 	protected:
 };
 

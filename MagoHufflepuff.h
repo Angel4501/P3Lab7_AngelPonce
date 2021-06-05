@@ -1,11 +1,16 @@
 #ifndef MAGOHUFFLEPUFF_H
 #define MAGOHUFFLEPUFF_H
-
-class MagoHufflepuff
+#include "Mago.h"
+#include<string>
+using namespace std;
+class MagoHufflepuff : public Mago
 {
+	private:
+		int paciencia;
 	public:
-		MagoHufflepuff();
+		MagoHufflepuff(int,int,int,int,int);
 		~MagoHufflepuff();
+		virtual void toString();
 	protected:
 };
 
